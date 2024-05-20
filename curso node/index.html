@@ -63,13 +63,19 @@
       </div>
       <div class="texto-encima">
         <h1>Inmobiliaria</h1>
-        
+       
         <select class="form-select" aria-label="Default select example">
-          <option selected>Busca la casa que queres</option>
-          <option value="1">Casas</option>
-          <option value="2">Departamentos</option>
-          <option value="3">Duplex</option>
+          <option disabled selected style="display:none;">...</option>
+          <option class="opcion" value="1">Casas</option>
+          <option class="opcion" value="2">Departamentos</option>
+          <option class="opcion" value="3">Duplex</option>
+          <option class="opcion" value="4">Alquileres</option>
+          <option class="opcion" value="5">Ventas</option>
+          <option class="opcion" value="6">Tasaciones</option>
+          <option class="opcion" value="7">Reprecentante</option>
         </select>
+
+
         <p> veni a conocer la casa de tus sueños</p>
       </div>
 
@@ -457,14 +463,15 @@
 
 
 <!-- Seccion Sobre Nosotros -->
-
-<section id="about-us" >
-    <div class="somos" id="quienes_somos">
-        <div class="container">
-            <h2 class="container__title">Quiénes Somos?</h2>
-            <p class="container__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat distinctio doloremque minima expedita repellat, laudantium hic, sit nobis perspiciatis delectus, harum sint pariatur. Iusto, quia quisquam odit dolorem quaerat delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus deserunt, expedita autem non odit veritatis velit minima consequatur officia, ratione deleniti quia blanditiis magnam esse quidem laborum voluptatibus, dignissimos nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat distinctio doloremque minima expedita repellat, laudantium hic, sit nobis perspiciatis delectus, harum sint pariatur. Iusto, quia quisquam odit dolorem quaerat delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus deserunt, expedita autem non odit veritatis velit minima consequatur officia, ratione deleniti quia blanditiis magnam esse quidem laborum voluptatibus, dignissimos nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat distinctio doloremque minima expedita repellat, laudantium hic, sit nobis perspiciatis delectus, harum sint pariatur. Iusto, quia quisquam odit dolorem quaerat delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus deserunt, expedita autem non odit veritatis velit minima consequatur officia, ratione deleniti quia blanditiis magnam esse quidem laborum voluptatibus, dignissimos nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat distinctio doloremque  </p>
-        </div>
+<section id="about-us">
+  <div class="somos" id="quienes_somos">
+    <div class="container">
+      <h2 class="container__title">Quiénes Somos</h2>
+      <p class="container__text">
+        En HogarHunt, nos dedicamos a ofrecer soluciones integrales en bienes raíces, adaptándonos a las necesidades de cada cliente. Con años de experiencia en el mercado, nuestro equipo de profesionales se especializa en la compra, venta y alquiler de propiedades, brindando un servicio personalizado y de alta calidad. Nuestra misión es facilitar el proceso de encontrar la propiedad ideal, ya sea para vivir, invertir o desarrollar proyectos. Valoramos la transparencia, la confianza y el compromiso, trabajando siempre con la máxima dedicación para superar las expectativas de nuestros clientes.
+      </p>
     </div>
+  </div>
 </section>
 
 <!-- Seccion Contacto -->
@@ -523,31 +530,53 @@
       <div class="row">
           <div class="col-md-4">
               <h2>Redes Sociales</h2>
-              <p>Encuentranos en nuestras redes sociales</p>
-              <i class="fa-brands fa-facebook"></i>tuInmobiliaria<br>
-              <i class="fa-brands fa-instagram"></i>  @tuInmobiliaria <br>
-              <i class="fa-brands fa-twitter"></i>inmo
+              <p>Encontranos en nuestras redes sociales</p>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/">
+                    <i class="iconos fa-brands fa-facebook"></i>
+                    <p>HogarHuntInmo</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <i class="iconos fa-brands fa-instagram"></i>
+                    <p>HogarHunt_</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/">
+                    <i class="iconos fa-brands fa-twitter"></i>
+                    <p>HogarHunt</p>
+                  </a>
+                </li>
+              </ul>
           </div>
-          <div class="col-md-4">
+          
+          <div class="contacto col-md-4">
               <h2>Informacion de Contacto</h2>
-              <p>Telefono: 123456789</p>
-              <p>Email:
-                  <a href="mailto: @gmail.com">inmobi@gmail.com</a>
-              </p>
+              <i class="iconos fa-solid fa-mobile-screen-button"></i>
+              <a href="tel:+541540592603">Telefono: (15) 4059-2603</a>
+              <br>
+              <i class="iconos fa-regular fa-envelope-open"></i>
+              <a href="mailto:inmobi@gmail.com">Email: inmobi@gmail.com</a>
           </div>
-          <div class="col-md-4">
-              <h2>Ubicacion</h2>
-              <p>Av. Siempre Viva 123</p>
-              <p>Moron Centro</p>
-              <p>CP: 12345</p>
-          </div>
+
+          <div class="contacto col-md-4"> 
+            <h2>Ubicacion</h2>
+            <p>Estamos ubicados en la calle 1234, Moron, Buenos Aires</p>
+            <p>Horarios de atención: Lunes a Viernes de 8 a 20hs</p>
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="300" height="80" id="gmap_canvas" src="https://maps.google.com/maps?q=clinica%20moron&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+            </div>
+         </div>
       </div>
   </div>
-    <p class="footer__text">&copy; 2024 Tu Inmobiliaria - Todos los derechos reservados</p>
-</footer>
-    </section>
+  <br>
 
-
+  <p class="footer__text">&copy; 2024 Tu Inmobiliaria - Todos los derechos reservados</p>
 </footer>
 
 <script src="script.js"></script>
